@@ -1,114 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moments Captured - Wedding Photography</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #fffaf8;
-      color: #333;
-    }
-    header {
-      background-color: #e2b4a8;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      color: white;
-      font-size: 2.5rem;
-    }
-    nav {
-      text-align: center;
-      margin-top: 1rem;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #555;
-      font-weight: bold;
-    }
-    .hero {
-      background-image: url('https://images.unsplash.com/photo-1520813792240-56fc4a3765a7');
-      background-size: cover;
-      background-position: center;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-    }
-    .hero h2 {
-      font-size: 3rem;
-    }
-    section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h3 {
-      color: #e07a5f;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    footer {
-      background-color: #e2b4a8;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Your Brand</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Moments Captured</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<body class="font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Your Brand</h1>
+      <nav class="space-x-4">
+        <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="/about" class="text-blue-600 font-semibold">About</a>
+        <a href="/services" class="text-gray-700 hover:text-blue-600">Services</a>
+        <a href="/contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="hero">
-    <h2>Capturing Love, One Frame at a Time</h2>
-  </div>
-
-  <section id="about">
-    <h3>About Us</h3>
-    <p>We specialize in storytelling through the lens, capturing the beauty and emotion of weddings. From candid moments to timeless portraits, we ensure your special day lives forever in perfect frames.</p>
-  </section>
-
-  <section id="portfolio">
-    <h3>Portfolio</h3>
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1527261834078-9b37d35a4a32" alt="Wedding moment 1">
-      <img src="https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2" alt="Wedding moment 2">
-      <img src="https://images.unsplash.com/photo-1511300636408-a63a89df3482" alt="Wedding moment 3">
-      <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" alt="Wedding moment 4">
+  <!-- Hero -->
+  <section class="bg-gray-200 py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-gray-800">About Us</h2>
+      <p class="text-gray-600 mt-2">Crafting Memories That Last Forever</p>
     </div>
   </section>
 
-  <section id="contact">
-    <h3>Contact</h3>
-    <p>Email: contact@momentscaptured.com</p>
-    <p>Phone: +91 98765 43210</p>
-    <p>Follow us on Instagram @momentscaptured_weddings</p>
+  <!-- About Content -->
+  <section class="py-12">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h3 class="text-2xl font-semibold mb-4">Our Story</h3>
+      <p class="text-gray-700 leading-relaxed">
+        We started with a dream to capture the most precious moments in life and turn them into timeless memories. At Your Brand, we believe in the power of storytelling through visuals. Whether it’s a wedding, anniversary, or a personal milestone, our passion lies in preserving your story with creativity and care.
+      </p>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Moments Captured. All rights reserved.</p>
+  <!-- Core Values -->
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-semibold text-center mb-10">Why Choose Us?</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-bold mb-2">Creative Approach</h4>
+          <p class="text-gray-600">We blend creativity with professionalism to deliver unique memories.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-bold mb-2">Quality Focused</h4>
+          <p class="text-gray-600">Every detail matters. We ensure top-notch quality in every frame.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-bold mb-2">Client Satisfaction</h4>
+          <p class="text-gray-600">Our goal is to see you smile when you relive your moments with us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-12">
+    <div class="container mx-auto px-4 text-center">
+      <p>© 2025 Your Brand. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>
